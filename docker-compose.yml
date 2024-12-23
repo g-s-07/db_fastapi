@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  generalapi-server:
+    container_name: generalapi-server
+    working_dir: /app
+    image: infodev0201/general-api:1.0.10-arm
+    ports:
+      - "8010:8010"
+    env_file:
+      - .env
+    command: ["python3", "main.py", "0.0.0.0", "--port", "8010"]

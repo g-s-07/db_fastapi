@@ -1,0 +1,19 @@
+# Ignore the virtual environment
+venv/
+.env
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore other common files/directories
+*.log
+*.sqlite3
+.git
+.gitignore
+.DS_Store
+
+locustfile.py
+test_webhook.py
+
